@@ -1,13 +1,13 @@
 ---
 layout: post
 title:      "Ruby Red Road"
-date:       2020-09-06 03:22:51 +0000
+date:       2020-09-05 23:22:52 -0400
 permalink:  ruby_red_road
 ---
 
 
-## THE BEGINNING
-### There I was 2 months into a Software Engineering immersive staring at the requirements of our first project due:
+### THE BEGINNING
+There I was 2 months into a Software Engineering immersive staring at the requirements of our first project due:
 > Write an app in Ruby that provides a Command Line Interface with which a User can access to data from a web page.
 > The data provided must go at least one level deep where a user can make a choice and get detailed information about their choice.
 ### The app I decided on, "Alotacookies," would be a CLI app that would scrape data from a Wikipedia site listing interesting and delicious cookies from around the globe, and at the user's request display cookie details, such as ingredients and country of origin.  Appealing to the child in me, I thought to myself that...my first project on this new road to becoming a Software Engineer would be tribute to my most favorite childhood...Cookie Monster, and I imagined the delight in Cookie's googly rolly eyes when he played with an app like "Alotacookies" on his smartphone. I imagine he'd be in cookie heaven.

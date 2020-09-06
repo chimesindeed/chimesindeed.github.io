@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "WEDNESDAY "
-date:       2020-09-06 03:56:46 +0000
+date:       2020-09-05 23:56:47 -0400
 permalink:  wednesday
 ---
 

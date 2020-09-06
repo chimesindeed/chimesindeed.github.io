@@ -1,0 +1,29 @@
+---
+layout: post
+title:      "TAVERNA    "
+date:       2020-09-06 04:04:30 +0000
+permalink:  taverna
+---
+
+
+#### Taverna aims to be a Single Page Application to give a Restaurant Owner the capacity to update his or her menu.  Ruby on Rails is used as a back-end framework to both persist Taverna’s data and make it available in JSON format to a vanilla JavaScript front-end.
+
+#### Initially, Taverna gives the User
+- RETRIEVE
+- CREATE
+- DELETE
+#### C.R.U.D. options for Menu Items, and the option to create Notes for any Item.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+### The Rails endpoints for JavaScript to connect are stored in an Adapter Class as are all async fetch requests.
+
+### DOM elements (isolated in consts) and Render functionality are both implemented in a Render class which the main App class extends.
+
+### There is an Item class and a Note class to specify the format to create frontend JavaScript objects out of all Item and Note objects retrieved from the back-end.
+
+### Instantiating items and notes as Objects as opposed to them being items in an array allows their attributes and methods to be specified with dot notation which allows for cleaner code as well as easier readability.
+------------------------------------------------------
+### My new favorite word is ```undefined```. Ok, not really. The hardest part of this module for me was phrasing data in a way that the rails back-end will accept. Like everything else, it probably just takes practice and also practice at reading documentation.
+--------------------------------------------------------------------------------------------------------------------------------------
+### Takaways:
+### Challenging, challenging, challenging! Humbling!  Admittedly, Taverna’s a bit clunky at the moment but this module has pushed me to stretch my learning skills more than any other module so far.

@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "RetailComp"
-date:       2020-12-19 23:31:39 +0000
+date:       2020-12-19 18:31:40 -0500
 permalink:  retailcomp
 ---
 
 
-* ### The goal of RetailComp is to facilitate both a more informed and uninterrupted shopping experience for customers as well as a more efficient and productive work-flow for employees, by being an App that displays the store's discount schedule on large screens throughout sales floors with an added feature of a Store locator  should a customer request that information.
+### The goal of RetailComp is to facilitate both a more informed and uninterrupted shopping experience for customers as well as a more efficient and productive work-flow for employees, by being an App that displays the store's discount schedule on large screens throughout sales floors with an added feature of a Store locator  should a customer request that information.
 ### |
 ## DISCOUNT SCHEDULE
 ### The Discount Schedule which is the main feature of RetailComp, is coded using the React.js framework and doesn't rely on anything externally as a data source.
@@ -19,7 +19,7 @@ permalink:  retailcomp
 ### An example of what may be rendered on a particular week.
 
 #### WEEKLY DISCOUNTS
-* || ic white, ro blue, nw ro pink
+* |ic white, ro blue, nw ro pink
 * GREEN 50% OFF
 * YELLOW 50% OFF
 * PINK 99 CENTS!
@@ -36,16 +36,15 @@ permalink:  retailcomp
 ### At the back of a Rails stack is an SQLite table ' stores ' with columns for things such as Store name, number, location, city, etc.
 ### Routes are enabled and Controller end-points setup for Create, Read, Update and Delete functionality on Stores which are made available in JSON format for the React frontend to access.
 ### |
-### From the perspective of the business model: A customer didn't find everything they were looking for and asks for a store list.  The employee brings up a store list on a screen and the information is there for the customer to do whatever they want with it.  The pain point alleviated is an employee having to either provide that information from memory or thumb around for a store list which often runs out.  Having that list available on screen alleviates stress for both customers and employees.
+### From the perspective of the business model: A customer didn't find everything they were looking for and asks for a store list.  The employee brings up a store list on a screen and the information is there for the customer to do whatever they want with it.
+### |
+### The pain point alleviated is an employee having to either provide that information from memory or thumb around for a store list which often runs out.  Having that list available on screen alleviates stress for both customers and employees.
 ###  |
-### A list of all stores, a selected store, or a form to update a store is rendered from a single Component based on the value of a ' toggle: ' key setup in the Redux store.  From a developer's perspective. 
+### A fetch GET request is sent upon mounting of the Stores feature and all stores are retrieved from the Rails index action, funneled into a ' stores ' key in the Redux store, which is mapped to and rendered to the screen for users.
+### | 
+### Double clicking a store will send a get request to the Rails show action passing in the id of the store as a parameter.  The response is funneled into a ' store ' key in the Redux store which is also mapped to and rendered.  And a similar process is achieved to update the information of a store.  
+### React Router is used to create separate Routes for RetailComp's Discounts and Stores features as well as a Route to enable the creation of new stores.
 
-### Because of Value set in COMPONENT A -> COMPONENT B is rendered.  A Universal State Library such as Redux
-
-* A Component that renders one of several Components based on conditional logic
-* The Rendered Component
-
-### Redux makes for coding a transition between the rendering of All Stores, One Store, An Update form, seemless.
 
 
 
